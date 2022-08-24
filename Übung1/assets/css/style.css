@@ -1,0 +1,11 @@
+.heading {
+    color: red;
+    background-color: blue;
+    font-size: 5rem;
+}
+
+.list {
+    color: rgb(12, 76, 3);
+    background-color: rgb(241, 158, 25);
+    font-size: 2rem;
+}

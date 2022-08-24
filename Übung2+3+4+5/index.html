@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body id="body">
+        <section>
+            <form action="" onsubmit="return false">
+                <label for="giveNumber">Enter Number</label>
+                <input type="text" id="giveNumber" name="giveNumber" />
+                <button
+                    type="submit"
+                    value="Verdoppel mich"
+                    id="button"
+                    onclick="multiple()"
+                >
+                    Verdoppel mich
+                </button>
+            </form>
+            <h2 id="showResult"></h2>
+        </section>
+        <section>
+            <form action="" onsubmit="return false">
+                <label for="age">Gib dein Geburtsjahr ein</label>
+                <input type="text" id="age" name="age" />
+                <button type="submit" id="button" onclick="ageCalc()">
+                    Berechne mein Alter
+                </button>
+            </form>
+            <h2 id="showAge"></h2>
+        </section>
+        <section>
+            <form action="" onsubmit="return false">
+                <label for="age1">Alter 1</label>
+                <input type="text" id="age1" name="age1" />
+                <label for="age2">Alter 2</label>
+                <input type="text" id="age2" name="age2" />
+                <button type="submit" id="button" onclick="ageDef()">
+                    Berechne
+                </button>
+            </form>
+            <h2 id="showDef"></h2>
+        </section>
+
+        <section>
+            <form class="flex" action="" onsubmit="return false">
+                <label for="range">Font size</label>
+                <input
+                    type="range"
+                    id="range"
+                    name="range"
+                    onchange="changeTxtConfig()"
+                />
+                <select
+                    name="fontFamily"
+                    id="fontFamily"
+                    onchange="changeTxtConfig()"
+                >
+                    <option value="'Bodoni Moda', serif">Bodoni Moda</option>
+                    <option value="'Open Sans', sans-serif">Open Sans</option>
+                    <option value="'Roboto', sans-serif">Roboto</option>
+                    <option value="'Yusei Magic', sans-serif">
+                        Yusei Magic
+                    </option>
+                </select>
+                <label for="text">Type text</label>
+                <input
+                    type="text"
+                    id="text"
+                    name="text"
+                    onchange="changeTxtConfig()"
+                />
+            </form>
+            <h2 id="display"></h2>
+        </section>
+
+        <section>
+            <form class="flex" action="" onsubmit="return false">
+                <label for="range1">RED</label>
+                <input
+                    type="range"
+                    id="range1"
+                    name="range1"
+                    onchange="changeBkColor()"
+                />
+                <label for="range2">GREEN</label>
+                <input
+                    type="range"
+                    id="range2"
+                    name="range2"
+                    onchange="changeBkColor()"
+                />
+                <label for="range3">BLUE</label>
+                <input
+                    type="range"
+                    id="range3"
+                    name="range3"
+                    onchange="changeBkColor()"
+                />
+            </form>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>
